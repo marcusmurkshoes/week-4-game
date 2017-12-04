@@ -1,0 +1,110 @@
+body {
+
+	background-image: url("../images/crystalBackground.jpg");
+
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+
+#crystalsCollector {
+	background-color: orange;
+	color: white;
+
+	width: 300px;
+	height: 50px;
+}
+
+
+#instructions {
+
+	background-color: white;
+	width: 475px;
+	height: 340px;
+	color: green;
+	font-size: 110%;
+}
+
+
+#numberToGuess {
+
+	background-color: mediumseagreen;
+	height: 100px;
+	width: 200px;
+	float: left;
+	font-size: 175%;
+	margin-top: 19px;
+}
+
+
+#winsLosses {
+
+	background-color: turquoise;
+	height: 100px;
+	width: 160px;
+	float: left;
+	margin-left: 10px;
+	font-size: 120%;
+	
+}
+
+#loser {
+
+	
+	float: left;
+	margin-left: -160px;
+	font-size: 120%;
+}
+
+#gem1 {
+
+	height: 100px;
+	width: 100px;
+	float: left;
+	clear: both;
+	
+
+}
+
+
+#gem2 {
+
+	height: 100px;
+	width: 100px;
+	float: left;
+}
+
+
+#gem3 {
+	height: 100px;
+	width: 100px;
+	float: left;
+}
+
+
+#gem4 {
+	height: 100px;
+	width: 100px;
+	float: left;
+}
+
+#yourScore {
+	color: white;
+	clear: both;
+	float: left;
+	background-color: darkcyan;
+	width: 244px;
+	height: 25px;
+}
+
+#counterScore {
+	color: white;
+	clear: both;
+	background-color: darkcyan;
+	width: 244px;
+	height: 80px;
+	font-size: 150%;
+}
