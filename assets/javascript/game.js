@@ -89,7 +89,6 @@ for(var i = 0; i < gemNumbers.length; i++) {
 
 // console.log(counter);
 
-$(document).ready(function() {
 
 
 $(".gem").on('click', function() {
@@ -100,16 +99,20 @@ $(".gem").on('click', function() {
 
   winReset();
 
-});
+
 });
 
 function winReset() {
   if (crystalValue === numberToGuess) {
     crystalValue = 0;
 
+    numberToGuess = Math.floor((Math.random() * 120) + 19);
     
 
-      $("#numberToGuess").text(Math.floor(Math.random() * 120) + 19);
+      $("#numberToGuess").text(numberToGuess);
+      // this is setting the html to random number, but does not exist in scope of game,
+      // set the text to the variable number to guess
+      // make the numberToGuess variable dynamic
 
       $("#counterScore").text(crystalValue);
 
@@ -119,7 +122,7 @@ function winReset() {
 
       // counter = Number(crystalValue);
 
-      console.log(crystalValue);
+      
 
 
      
@@ -129,13 +132,18 @@ function winReset() {
 
     }
 
+
     else if (crystalValue >= numberToGuess) {
 
       crystalValue = 0;
 
     counter = Number(crystalValue);
     	// crystalValue = 0;
-    	$("#numberToGuess").text(Math.floor(Math.random() * 120) + 19);
+
+    	numberToGuess = Math.floor((Math.random() * 120) + 19);
+    
+
+      $("#numberToGuess").text(numberToGuess);
       $("#counterScore").val(crystalValue);
     	losses++;
     	$("#loser").text("Losses: " + losses);
@@ -144,11 +152,27 @@ function winReset() {
 
     
     }
+    console.log(crystalValue);
 }
 
 
 
+function loops(bananas) {
+  for (var i=0; i<bananas.length; i++) {
+    // console.log(bananas[i]);
+  }
+}
 
+
+loops([1,2,3,4,5]);
+
+
+
+function numberRandomizer(smh) {
+
+ Math.floor((Math.random() * 120) + 19);
+
+}
 
 
 //------------------------
